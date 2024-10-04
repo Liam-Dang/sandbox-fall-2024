@@ -1,8 +1,11 @@
 package com.sandbox.streamapi;
 
 import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.*;
 import java.util.stream.*;
+
+import static java.util.Locale.filter;
 
 public class StreamExamples {
 
@@ -82,7 +85,20 @@ public class StreamExamples {
         random.ints(1, 11)
                 .limit(50)
                 .forEach(System.out::println);
+        //IntStream generate
+        final AtomicInteger counter = new AtomicInteger(1);
+        IntStream.generate(counter::getAndIncrement)
+                .filter(evenOnly)
+                .limit(5)
+                .forEach(System.out::println);
 
 
+
+        // stream of random strings
+        String randomString = Stream.generate(new StringGenerator())
+                .limit(16)
+                .collect(Collectors.joining());
+        System.out.println(randomString);
     }
+
 }
