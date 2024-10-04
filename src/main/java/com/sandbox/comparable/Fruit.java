@@ -81,6 +81,5 @@ public class Fruit implements Comparable<Fruit> {
 
         fruits.forEach(System.out::println);
 
-
     }
 }

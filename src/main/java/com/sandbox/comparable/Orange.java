@@ -1,5 +1,6 @@
 package com.sandbox.comparable;
 
+
 public class Orange {
     private String type;
     private String color;
