@@ -3,6 +3,7 @@ package com.sandbox.stacks;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ArrayListStack<T> implements Stack<T> {
 
     private List<T> stack;

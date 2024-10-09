@@ -7,5 +7,4 @@ public interface Stack <E>{
    public abstract E pop();
    public abstract void push(E item);
    public abstract int search(E item);
-
 }
