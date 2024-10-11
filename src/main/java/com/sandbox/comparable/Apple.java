@@ -6,6 +6,7 @@ public class Apple implements Comparable<Orange> {
     private int size;
 
     public Apple(String type, String color, int size) {
+        super();
         this.type = type;
         this.color = color;
         this.size = size;
