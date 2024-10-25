@@ -82,6 +82,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
         return element;
     }
 
+    // O(1)
     @Override
     public E peekFirst() {
 
@@ -92,6 +93,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
         return returnValue;
     }
 
+    // O(1)
     @Override
     public E peekLast() {
 
@@ -102,6 +104,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
         return returnValue;
     }
 
+    // O(n)
     @Override
     public void clear() {
 
@@ -116,6 +119,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
 
     }
 
+    // O(n)
     @Override
     public boolean contains(E element) {
 
@@ -132,6 +136,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
         return found;
     }
 
+    // O(n)
     @Override
     public int size() {
         int counter =0;
@@ -149,6 +154,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
         return counter;
     }
 
+    // O(mn)
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder("[");

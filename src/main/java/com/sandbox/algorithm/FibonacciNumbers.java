@@ -16,6 +16,7 @@ public class FibonacciNumbers {
             }
     }
 
+    // O(2^n) amortized to O(1) using memoization
     public long fib(int x) {
 
         // f0 = 0
@@ -32,6 +33,7 @@ public class FibonacciNumbers {
         return memo(x - 1) + memo(x - 2);
     }
 
+    // O(n)
     public long memo(int m) {
 
         Long value = dictionary.get(m);
